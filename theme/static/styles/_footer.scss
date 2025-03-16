@@ -1,0 +1,76 @@
+// ------------------------------------------------------------------------------------------//
+// footer
+#main-footer {
+  @include outer-container;
+  border-top: $base-border;
+  margin-top: 2em;
+
+  #links {
+    @include row;
+    section, address {
+      font-style: normal;
+      margin: 1.5em 0;
+
+      ul.tag-cloud li {
+        display: inline-block;
+        margin-right: 1em;
+        font-size: .8em;
+
+        &.tag-2 {
+          font-size: 1em;
+        }
+        &.tag-3 {
+          font-size: 1.2em;
+        }
+        &.tag-4 {
+          font-size: 1.4em;
+        }
+        &.tag-5 {
+          font-size: 1.6em;
+        }
+      }
+
+      @include media($medium-screen-down) {
+        text-align: center;
+
+        ul > li > a {
+          display: block;
+          padding: $very-small-spacing;
+          width: 100%;
+          border: $base-border;
+          margin-bottom: $very-small-spacing;
+          border-radius: $base-border-radius;
+        }
+      }
+
+      @include media($medium-screen-up) {
+        @include span-columns(12/4);
+      }
+    }
+  }
+
+  #subfooter {
+    @include display(flex);
+    @include align-items(flex-end);
+    //@include flex-flow(row nowrap);
+    margin-bottom: 1em;
+
+    #copyright {
+      flex-grow: 1;
+      font-size: .75em;
+
+      p:last-child {
+        margin: 0;
+      }
+
+      #license a {
+        vertical-align: middle;
+      }
+    }
+
+    #subscribe-link {
+      //flex-grow: 1;
+      //float: right;
+    }
+  }
+}

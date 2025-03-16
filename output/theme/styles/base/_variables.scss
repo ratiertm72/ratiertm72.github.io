@@ -1,0 +1,55 @@
+// Typography
+$base-font-family: "Open Sans", serif;
+$alt-font-family: "Oswald", sans-serif;
+$monospace-font-family: 'Consolas', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+$heading-font-family: $alt-font-family;
+
+// Font Sizes
+$base-font-size: 17px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * .9em;
+$small-spacing: $base-spacing / 2;
+$very-small-spacing: $small-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: #555;
+$heading-font-color: #333;
+$action-color: #225C44;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #ffffff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Cards
+$base-card-background-color: #fff;
+$base-card-border-color: $base-border-color;
+$base-card-border: 1px solid $base-card-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Shadows
+$base-shadow-color: rgba(0, 0, 0, .1);
+$base-shadow: 0 2px 6px 0 $base-shadow-color;
