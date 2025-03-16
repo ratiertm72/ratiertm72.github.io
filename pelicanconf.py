@@ -1,7 +1,7 @@
 AUTHOR = 'DongBuem Lee'
 SITENAME = 'lchfkorea'
 SITESUBTITLE = "first trys by MindBuild"
-SITEURL = 'https://lchfkorea.com'
+SITEURL = 'https://ratiertm72.github.io'
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'static']
